@@ -48,7 +48,7 @@ public class Workflow {
 			for(int i=0; i<taskList.size();  i++){
 				if((task.getTaskId() == taskList.get(i).getTaskId()) && (i<taskList.size()-1)){
 					nextTask = taskList.get(i + 1);
-					Task serializedTask = serializeTask(task, nextTask);
+					Task serializedTask = serializeTask(nextTask);
 					nextTask = serializedTask;
 				}
 			}	
