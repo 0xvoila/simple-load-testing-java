@@ -17,7 +17,7 @@ public class Client {
 		
 		JSONObject workFlow = new JSONObject();
 		workFlow.put("targetLocations", targetLocationArray);
-		workFlow.put("csvFileLocation", "/Users/admin/solid/simple-artillery/src/engine/Lead.csv");
+		workFlow.put("csvFileLocation", "/Users/admin/solid/simple-artillery/src/engine/lead.csv");
 		
 		HitTarget newHitTarget = new HitTarget(100,workFlow, "Scheme1", "TextReporter");
 		newHitTarget.run();
